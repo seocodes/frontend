@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <section>
+    <link rel="stylesheet" href="form.css">
+    <h2>APLICAÇÃO PARA O CURSO</h2>
+    <hr>
+<div id="columns">
+    <div class="form">
+        <div id="info">
+        <h3>Informações pessoais:</h3>
+    <form>
+        Nome: <input type="text" id="nome" name="name" required> <br>
+        Endereço: <input type="text" id="endereco" name="endereco">
+        Bairro: <input type="text" id="bairro" name="bairro">
+        Estado: <select id="estado" name="estado">
+            <option value="sao-paulo">São Paulo</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="minas-gerais">Minas Gerais</option>
+            <option value="parana">Paraná</option>
+            <option value="santa-catarina">Santa Catarina</option> </select>
+        </select><br>
+        País: <select id="pais" name="pais">
+            <option value="brasil">Brasil</option>
+            <option value="estados-unidos">Estados Unidos</option>
+            <option value="franca">França</option>
+            <option value="alemanha">Alemanha</option>
+            <option value="japao">Japão</option> </select>
+        </select>
+        Cidade: <input type="text" id="cidade" name="cidade">
+        CEP: <input type="text" id="cep" name="cep"><br>
+        Email: <input type="text" id="email" name="email">
+        CPF: <input type="text" id="cpf" name="cpf"><br>
+        Telefone: <input type="text" id="telefone" name="telefone"> <br>
+        Sexo: <input type="radio" id="sex" name="sex" value="Masc."> Masculino
+        <input type="radio" id="sex" name="sex" value="Fem."> Feminino <br>
+        Estado civil: <input type="radio" id="estadoc" name="estadoc" value="Solteiro"> Solteiro
+        <input type="radio" id="estadoc" name="estadoc" value="Casado"> Casado <br>
+        Data: <input type="time" id="data" name="data"> 
+    </div>
+        <h3>Escolaridade</h3>
+        <div id="escola">
+        Nível de educação: <input type="checkbox" id="nved" name="Fundamental" value="Fundamental">Fundamental
+        <input type="checkbox" id="nved" name="Médio" value="Médio">Médio
+        <input type="checkbox" id="nved" name="Técnico" value="Técnico">Técnico <br>
+        Curso escolhido: <select id="curso" name="curso">
+            <option value="informatica">Informática</option>
+            <option value="adm">Administração</option>
+            <option value="multimidia">Multimídia</option>
+            <option value="design">Design</option>
+            <option value="eletrotecnico">Eletrotécnico</option>
+          </select> <br>
+          Período: <input type="radio" id="periodo" name="matutino" value="Matutino"> Matutino
+          <input type="radio" id="periodo" name="vespertino" value="Vespertino"> Vespertino
+          <input type="radio" id="periodo" name="noturno" value="Noturno"> Noturno
+        <div id="button">
+            <input type="submit" id="acesso" name="acesso">
+          <input type="reset" id="reset" name="reset">
+        </div>
+        </div>
+    </form>
+    </div>
+</div>
+</section>
+
+</body>
+</html>
