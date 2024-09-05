@@ -1,148 +1,185 @@
-*{
+* {
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#logo{
-    display: flex;
-    width: 100%;
-}
-
-.logo{
-    width: 650px;
-    height: 500px;
-}
-
-nav{
-    width: 100%;
-    height: 350px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: red;
-}
-
-#info{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    font-size: 40px;
-}
-
-a{
-    display: flex;
-    color: white;
-    text-decoration: underline;
-}
-
-#phone{
-    width: 80px;
-    height: 10%;
-    margin-right: 50px;
-}
-
-
-#home{
-    width: 85%;
-    height: 100vh;
-    border-radius: 12px; 
-}
-
-#home1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    padding: 2%;
-    border-radius: 16px;
-    background-color: rgb(255, 174, 0);
-    margin: 2%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#home2{
+#logo {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    width: 100%;
+    height: 50%;
     justify-content: center;
-    width: 40%;
+}
+
+.logo {
+    width: 100%;
+    max-width: 650px;
     height: auto;
-    padding: 2%;
-    border-radius: 16px;
-    background-color: rgb(255, 174, 0);
-    margin: 2%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-hr{
-    width: 42%;
-    color: black;
-}
-
-#cardapio{
+nav {
+    width: 100%;
+    height: 300px;
     display: flex;
-    flex-direction: column;
-    margin-right: 150px;
-    width: 50%;
-}
-
-#pizza{
-    border-radius: 12px;
-    margin-left: 120px;
-    width: 700px;
-    height: 400px;
-}
-
-#sobrenos{
-    font-size: xx-large;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 2%;
+    background-color: red;
+    padding: 20px 0;
+    justify-content: space-evenly;
 }
 
-#pizzaria{
-    border-radius: 12px;
-}
-
-h4{
+#info {
+    display: flex;
+    flex-direction: row;
+    color: white;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-#sobre{
-    display: flex;
-    flex-direction: column;
-    padding-left: 200px;
-    width: 40%;
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-section{
+#home {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.home1 {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    width: 90%;
+    background-color: rgb(255, 174, 0);
+    margin: 20px 0 40px 0;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+#map {
+    width: 100%;
+    max-width: 800px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+    margin-right: 5%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.sobrenos {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#pizzaria {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-right: 5%;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sobre {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+section {
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-#q{
-    font-size: 40px;
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    #info {
+        font-size: 18px;
+    }
+
+    .home1 {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    #map {
+        height: 200px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
 }
 
-ul{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
+@media (max-width: 480px) {
+    .logo {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    .home1 {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+
+    #map {
+        height: 200px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
 }
 
-#footer{
+#footer {
     width: 100vw;
     background-color: red;
-    height: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    justify-content: space-evenly;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
