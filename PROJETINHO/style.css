@@ -20,13 +20,13 @@ body {
 
 .logo {
     width: 100%;
-    max-width: 650px;
-    height: auto;
+    max-width: 300px;
+    height: 300px;
 }
 
 nav {
     width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -114,7 +114,6 @@ section {
     align-items: center;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -133,7 +132,7 @@ section {
     }
 
     #map {
-        height: 200px;
+        height: 300px;
     }
 
     h4 {
@@ -183,3 +182,76 @@ section {
     font-size: 22px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* ESTILIZAÇÃO DO CARDAPIO */
+
+#home2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px 0 0 0;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+    padding: 3%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.saborInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#infoPizza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nomePizza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pizzaimg {
+    width: 200px;
+    height: 150px;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .cardapio {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .pizzaimg {
+        width: 150px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* ESTILIZAÇÃO DOS PEDIDOS */
