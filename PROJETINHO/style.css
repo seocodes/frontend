@@ -32,7 +32,7 @@ nav {
     align-items: center;
     background-color: red;
     padding: 20px 0;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 #info {
@@ -61,7 +61,7 @@ a {
     align-items: center;
     width: 90%;
     background-color: rgb(255, 174, 0);
-    margin: 20px 0 40px 0;
+    margin: 40px 0 40px 0;
     border-radius: 16px;
     padding: 20px;
 }
@@ -227,7 +227,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 38px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -346,6 +346,11 @@ input[type='checkbox']{
     flex-wrap: wrap; 
     margin: 0 auto; 
     width: 40%; 
+}
+
+button:hover{
+    background-color: green;
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {
