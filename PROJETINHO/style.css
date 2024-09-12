@@ -255,3 +255,149 @@ section {
 }
 
 /* ESTILIZAÇÃO DOS PEDIDOS */
+
+input{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    border: solid 2px #616161;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 97%;
+}
+
+#infoPessoal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#infoEncomenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sabores{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+select {
+    border: none; 
+    outline: none; 
+    padding: 8px; 
+    border-radius: 4px; 
+    background-color: #cbcbcb; 
+    font-size: 14px;
+}
+
+button{
+    padding: 10px;
+    height: 60px;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #00d307d5;
+    border: none;
+    border-radius: 12px;
+    color: white;
+}
+
+#sab{
+    margin-bottom: 5%;
+}
+
+input[type='checkbox']{
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.abc{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    border: solid 2px #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 8%;
+    border-radius: 8px;
+    margin: 5px 0 60px 0;
+    width: 150%;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+    width: 40%; 
+}
+
+@media (max-width: 600px) {
+    #columns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #infoPessoal, #infoEncomenda {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .box {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: large;
+    }
+
+    select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type='text'], input[type='time'] {
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+    }
+
+    input[type='checkbox'] {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    #sabores {
+        margin: 2%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    button {
+        font-size: large;
+        padding: 8px;
+    }
+
+    select, input[type='text'], input[type='time'] {
+        font-size: small;
+    }
+}

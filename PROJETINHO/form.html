@@ -18,8 +18,65 @@
             </div>
         </div>
     </nav>
-<div id="home3">
-
+<div id="columns">
+    <div id="infoPessoal">
+    <form>
+        <h2 class="abc">Informações pessoais</h2>
+        <div class="box">
+        Nome: <input type="text" id="nome" name="name" required> <br>
+        Endereço: <input type="text" id="endereco" name="endereco"><br>
+        Bairro: <input type="text" id="bairro" name="bairro"> <br>
+        Cidade: <input type="text" id="cidade" name="cidade"><br>
+        CEP: <input type="text" id="cep" name="cep"><br>
+        Email: <input type="text" id="email" name="email"><br>
+        CPF: <input type="text" id="cpf" name="cpf"><br>
+        Telefone: <input type="text" id="telefone" name="telefone"> <br>
+        CPF: <input type="text" id="cpf" name="cpf"><br>
+        RG: <input type="text" id="rg" name="rg"><br>
+        Estado: <select id="estado" name="estado">
+            <option value="sao-paulo">São Paulo</option>
+            <option value="rio-de-janeiro">Rio de Janeiro</option>
+            <option value="minas-gerais">Minas Gerais</option>
+            <option value="parana">Paraná</option>
+            <option value="santa-catarina">Santa Catarina</option> </select>
+    </div>
+    </div>
+    <div id="infoEncomenda">
+        <h2 class="abc">Encomenda</h2>
+        <div class="box">
+            Data: <input type="time" id="data" name="data"> <br>
+            Tipo pizza:             
+            <select name="tipo-pizza">
+                <option value="doce">Doce</option>
+                <option value="salgada">Salgada</option>
+            </select> <br><br>
+            Tamanho: 
+            <select name="tamanho-pizza">
+                <option value="pequena">Pequena</option>
+                <option value="media">Média</option>
+                <option value="grande">Grande</option>
+            </select> <br><br>
+        <div id="sabores">
+            <p id='sab'>Sabores:</p>
+            <label>Calabresa<input type="checkbox" name="sabor-pizza" value="calabresa"> </label>
+            <label> Frango<input type="checkbox" name="sabor-pizza" value="frango"></label>
+            <label> Margarita<input type="checkbox" name="sabor-pizza" value="margarita"></label>
+            <label> Vegetarian<input type="checkbox" name="sabor-pizza" value="vegetariana"></label>
+            <label> Atum<input type="checkbox" name="sabor-pizza" value="atum"></label>
+        </div> <br>
+        Sabor borda:
+        <select name="sabor-borda">
+            <option value="requeijao">Requeijão</option>
+            <option value="cheddar">Cheddar</option>
+            <option value="cheddar">Catupiry</option>
+        </select> <br><br><br>
+    <div id="buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </form>
+            </div>
+        </div>
+    </div>
 </div>
 <footer>
     <div id="footer">
