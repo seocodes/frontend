@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: auto;
+    background-image: url(./media/bckg.jpg);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+section{
+    display: flex;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 100vw;
+    align-items: flex-start;
+}
+
+.column-option-container{
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 40px 100px 0 40px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 700px;
+}
+
+.op:hover{
+    color:tomato;
+}
+
+#low{
+    margin-top: 650px;
+    display: flex;
+    max-width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+#home-img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+#bio{
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    width: 40%;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+}
+
+#album-listen{
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    transition: opacity 0.3s ease-in;
+}
+
+#album-listen:hover{
+    color: white;
+    opacity: 0.7;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 30px 200px 15px 0;
+}
+
+#logo-img{
+    width: 50%;
+    height: auto;
+    display: flex;
+}
+
+#socials{
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.social{
+    text-decoration: none;
+}
+
+.logo-social{
+    width: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.logo-social:hover{
+    opacity: 0.5;
+}
+
+
+/* ESTILIZAÇÃO HISTORY */
+
+#main-container2{
+    display: flex;
+    max-width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+#history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+#toliver-img{
+    width: 70%;
+}
+
+#info{
+    color: aliceblue;
+    font-family: "Roboto Condensed", sans-serif;;
+}
+
