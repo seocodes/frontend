@@ -201,7 +201,7 @@ a{
 .album{
     width: 150px;
     margin-right: 15px;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: opacity 0.3s ease;
 }
 
@@ -217,11 +217,11 @@ a{
     justify-content: center;
     color: aliceblue;
     background-color: tomato;
-    border-radius: 8px;
     width: 200px;
-    height: 30px;
+    height: 35px;
     outline: none;
     border: none;
+    font-size: 16px;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -235,5 +235,4 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
 }
