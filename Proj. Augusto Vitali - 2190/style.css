@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+
+nav {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: red;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#home {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.home1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    background-color: rgb(255, 174, 0);
+    margin: 40px 0 40px 0;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+#map {
+    width: 100%;
+    max-width: 800px;
+    height: 700px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0;
+    margin-right: 5%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.sobrenos {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#pizzaria {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    margin-right: 5%;
+}
+
+h4 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sobre {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    #info {
+        font-size: 18px;
+    }
+
+    .home1 {
+        flex-direction: column;
+        width: 90%;
+        padding: 10px;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    .home1 {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+
+    #map {
+        height: 200px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+}
+
+#footer {
+    width: 100vw;
+    background-color: red;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    justify-content: space-evenly;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ESTILIZAÇÃO DO CARDAPIO */
+
+#home2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px 0 0 0;
+}
+
+.cardapio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    max-width: 800px;
+    padding: 3%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.saborInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#infoPizza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nomePizza {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pizzaimg {
+    width: 200px;
+    height: 150px;
+    border-radius: 16px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .cardapio {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .pizzaimg {
+        width: 150px;
+        height: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* ESTILIZAÇÃO DOS PEDIDOS */
+
+input{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    border: solid 2px #616161;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 97%;
+}
+
+#infoPessoal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#infoEncomenda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#sabores{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+select {
+    border: none; 
+    outline: none; 
+    padding: 8px; 
+    border-radius: 4px; 
+    background-color: #cbcbcb; 
+    font-size: 14px;
+}
+
+button{
+    padding: 10px;
+    height: 60px;
+    font-size: xx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #00d307d5;
+    border: none;
+    border-radius: 12px;
+    color: white;
+}
+
+#sab{
+    margin-bottom: 5%;
+}
+
+input[type='checkbox']{
+    width: 5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.abc{
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+.box{
+    background-color: rgb(255, 255, 255);
+    border: solid 2px #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 8%;
+    border-radius: 8px;
+    margin: 5px 0 60px 0;
+    width: 150%;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+    width: 40%; 
+}
+
+button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #columns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #infoPessoal, #infoEncomenda {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .box {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: large;
+    }
+
+    select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input[type='text'], input[type='time'] {
+        width: calc(100% - 20px);
+        box-sizing: border-box;
+    }
+
+    input[type='checkbox'] {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    #sabores {
+        margin: 2%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    button {
+        font-size: large;
+        padding: 8px;
+    }
+
+    select, input[type='text'], input[type='time'] {
+        font-size: small;
+    }
+}

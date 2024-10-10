@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    max-width: 100vw;
+    height: auto;
+    background-image: url(./media/222.jpeg);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+section{
+    display: flex;
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 100vw;
+    align-items: flex-start;
+}
+
+.column-option-container{
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 40px 100px 0 40px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 700px;
+}
+
+.op:hover{
+    color:tomato;
+}
+
+#low{
+    margin-top: 650px;
+    display: flex;
+    max-width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+}
+
+#home-img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.bio{
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    width: 40%;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+}
+
+#album-listen{
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    transition: box-shadow 0.3s ease;
+    margin-top: 90px;
+    position: absolute;
+}
+
+#album-listen:hover{
+    color: white;
+    box-shadow: 0 10px 40px rgba(253, 253, 253, 0.5);
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 30px 50px 15px 0;
+}
+
+#logo-img{
+    width: 40%;
+    height: auto;
+    display: flex;
+}
+
+#socials{
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.social{
+    text-decoration: none;
+}
+
+.logo-social{
+    width: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.logo-social:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+
+
+/* ESTILIZAÇÃO HISTORY */
+
+#main-container2{
+    display: flex;
+    max-width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    margin-left: 190px;
+    justify-content: flex-end;
+
+}
+
+#history{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+#toliver-img{
+    width: 70%;
+}
+
+
+#info{
+    color: aliceblue;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#info h1{
+    font-size: 50px;
+}
+
+#don-toliver{
+    display: flex;
+    width: 220%;
+    margin: 0px -150px 15px 0;
+}
+
+/* ESTILIZAÇÃO DA PAGINA ALBUMS  */
+
+#main-container3 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+    align-items: center;
+    margin-left: 190px;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.album{
+    width: 150px;
+    margin-right: 15px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+
+.album:hover{
+    opacity: 0.7;
+    transform: rotate(3deg);
+}
+
+#spotify-follow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: tomato;
+    width: 200px;
+    height: 35px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#spotify-follow:hover{
+    color: tomato;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ESTILIZAÇÃO DA PAGINA GALLERY  */
+
+#main-container4{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+#row1{
+    display: flex;
+    flex-direction: row;
+}
+
+#row2{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
+    margin: 15px;
+    filter: grayscale(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.photo:hover{
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+#logo_g{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 12%;
+    margin: 30px 50px 15px 0;
+}
+
+#don-toliver2{
+    display: flex;
+    justify-content: flex-end;
+    width: 200%;
+}
+

@@ -1,0 +1,95 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: whitesmoke;
+}
+.seila{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#nigg{
+    color:blue;
+    background-color: yellow;
+}
+ #frase{
+    font-family: JetBrains;
+    font-size: xx-large;
+
+ }
+#nigger{
+    color: saddlebrown;
+}
+#vicenzo{
+    border: solid;
+    border-color: aqua;
+}
+#carro{
+    border: solid;
+    border-color: aqua;
+}
+#imgfoda{
+    border: solid;
+    border-color: aqua;
+}
+.imgs{
+    margin-bottom: 0;
+    margin-top: 10px;
+    outline: black;
+    border: solid;
+    border-radius: 10px;
+    border-color: black;
+}
+#papai{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+#vicenzo{
+    width: 600px;
+    height: 700px;
+}
+.lista{
+    font-size: 25px;
+    color: black;
+}
+#carro{
+    width: 1000px;
+    height: 90px;
+}
+.lista{
+    margin-bottom: 40px;
+    border: solid;
+    border-color: blueviolet;
+    border-radius: 30px;
+    padding-right: 20PX;
+    padding-left: 20px;
+    color: blueviolet;
+    text-align: center;
+}
+.listas2{
+    font-size: x-large;
+    border: solid;
+    border-radius: 50px;
+    padding-right: 20PX;
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#bgl{
+    font-size: xx-large;
+}
+.titulotd{
+    margin: 5px;
+    font-size: x-large;
+}
+.tables{
+    padding: 10px;
+    font-size: larger;
+}
+
+td{
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
