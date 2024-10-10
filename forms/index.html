@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+<body>
+    <section>
+        <link rel="stylesheet" href="style1.css">
+        <div class="login">        
+            <h1>Log In</h1>
+        </div>
+        <div clas="form">
+            <div id="login">
+            <form id='main-form'>
+                Usuário:<br>
+                <input type="text" id="nome" name="nome"> <br>
+                Senha:<br>
+                <input type="password" id="password" name="password"> <br>
+                <div id="seila">                
+                    <input type="submit" id="acesso" name="acesso"> <br>
+                    <input type="reset" id="reset" name="reset"></div>
+                </div>
+                    
+                <hr>
+            <div class="outros">
+                <div id="cursos">
+                    Curso:
+                <input type="checkbox" id="curso" name="info" value="I">Informática <br>
+                <input type="checkbox" id="curso" name="adm" value="I">ADM <br>
+                <input type="checkbox" id="curso" name="multi" value="I">Multimídia <br>
+                </div>
+                
+              <!-- ao lugar co check box, há o radio, que só pode selecionar um, mais info em: https://www.w3schools.com/tags/tag_label.asp -->
+               Hora: <input type="time" name="hora" id="time"> <br>
+               Telefone: <input type="number" id="number" name="numero"> <br>
+               Estado: <select name="estado" id="estado">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+               </select> <br>
+               Sugestões:
+               <textarea name="sugestao" id="sugestao" rows=5 cols=30>
+    Deixe aqui suas sugestões! <br>
+    <!-- EXISTE O USO DAS TABLES TB <TABLE BORDER="0"></TABLE> e os <td></td> e <tr></tr> -->
+               </textarea>
+               <button></button>
+            </div>
+        </div>
+    </form>
+    </section>
+</body>
+</html>
