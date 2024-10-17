@@ -4,12 +4,17 @@
     margin: 0;
 }
 
+html{
+    overflow: hidden;
+}
+
 body{
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     max-width: 100vw;
     height: auto;
-    background-image: url(./media/bckg.jpg);
+    background-image: url(./media/222.jpeg);
 }
 
 nav{
@@ -105,11 +110,11 @@ a{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 30px 150px 15px 0;
+    margin: 30px 50px 15px 0;
 }
 
 #logo-img{
-    width: 50%;
+    width: 40%;
     height: auto;
     display: flex;
 }
@@ -158,6 +163,13 @@ a{
 
 #toliver-img{
     width: 70%;
+    border-radius: 8px;
+    margin-left: 350px;
+    transition: transform 0.5s ease-out;
+}
+
+#toliver-img:hover{
+    transform: scale(1.2);
 }
 
 
@@ -231,8 +243,202 @@ a{
     cursor: pointer;
 }
 
-#button{
+.button{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* ESTILIZAÇÃO DA PAGINA GALLERY  */
+
+#main-container4{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+#row1{
+    display: flex;
+    flex-direction: row;
+}
+
+#row2{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo{
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 4px;
+    margin: 15px;
+    filter: grayscale(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.photo:hover{
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+#logo_g{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 12%;
+    margin: 30px 50px 15px 0;
+}
+
+#don-toliver2{
+    display: flex;
+    justify-content: flex-end;
+    width: 200%;
+}
+
+/* ESTILIZAÇÃO DA PAGINA SCHEDULE  */
+
+#main-container5{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+}
+
+#column-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.tour-square{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    transition: background-color 0.3s ease-in-out;
+    transition: padding 0.3s ease-in;
+}
+
+.tour-square:hover{
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 100px;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.tour-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    justify-content: center;
+}
+
+.month{
+    font-size: 24px;
+}
+
+.day{
+    font-size: 42px;
+}
+
+.year{
+    font-size: 24px;
+}
+
+.city{
+    font-size: 28px;
+}
+
+.local{
+    font-size: 18px;
+}
+
+#logo-tour{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 30px 50px 15px 0;
+    width: 20%;
+}
+
+#don-toliver3{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#tickets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    width: 200px;
+    height: 45px;
+    outline: none;
+    border-color: white;
+    background-color: tomato;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#tickets:hover{
+    color: tomato;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+#tickets-button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 301px;
+}
+
+#tickets-button2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 246px;
+}
+
+#tickets-button3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 277px;
+}
+
+#tickets-button4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 315px;
+}
+
+#tickets-button5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 306.5px;
+}
+
+
