@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Cadastro</title>
+<script>
+function verificar() {
+
+try { 
+   var x = document.getElementById("valor").value;
+
+   if (x == "") throw "Campo vazio";
+   if (isNaN(x)) throw "não é um número válido";
+   if (x > 10) throw "Alto demais";
+   if (x < 5) throw "Baixo demais";
+   
+   document.getElementById("mesg").innerHTML="Número aceito!";
+   } 
+catch(err) {
+	var y = document.getElementById("mesg");
+        y.innerHTML="Erro: " + err + ".";
+          }
+}
+</script>
+</head>
+<body>
+<h1>Exemplo:</h1>
+<p>Digite um número entre 5 e 10:</p>
+
+<input  type="text" name="valor" id="valor">
+<button type="button" onclick="verificar()">Testar</button>
+
+<p id="mesg"></p>
+
+</body>
+</html>
+
