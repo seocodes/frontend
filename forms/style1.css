@@ -91,3 +91,10 @@ section{
 #main-form {
     width: 100%;
 }
+
+#submit{
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+    background-color: aqua;
+}
