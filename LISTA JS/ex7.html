@@ -1,0 +1,26 @@
+<!-- Augusto Z. Vitali -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX6</title>
+</head>
+<body>
+    <div id="form">
+        <input type ="number" id="peso" placeholder="peso"> <br>
+        <input type ="number" id="altura" placeholder="altura"> <br>
+        <input type="submit" id="acesso" name="acesso" button onclick="return calcMassa()"> 
+        <p id="msg"></p>
+    </div>
+    <script>
+        function calcMassa(){
+            let peso = parseFloat(document.getElementById("peso").value)
+            let altura = parseFloat(document.getElementById("altura").value)
+            let massa = peso/(altura*altura)
+            document.getElementById("msg").innerHTML = "Sua massa é de: " + massa
+        };
+    </script>
+</body>
+</html>

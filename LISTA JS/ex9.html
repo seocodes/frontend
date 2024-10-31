@@ -1,0 +1,27 @@
+<!-- Augusto Z. Vitali -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX9</title>
+</head>
+<body>
+    <div id="form">
+        <input type ="text" id="nome" placeholder="nome"> <br>
+        <input type ="number" id="numhoras" placeholder="Horas trabalhadas"> <br>
+        <input type ="number" id="valorhora" placeholder="Valor hora"> <br>
+        <input type="submit" id="acesso" name="acesso" button onclick="return calcSalario()"> 
+        <p id="msg"></p>
+    </div>
+    <script>
+        function calcSalario(){
+            let horas = parseFloat(document.getElementById("numhoras").value)
+            let valor = parseFloat(document.getElementById("valorhora").value)
+            let salario = horas*valor
+            document.getElementById("msg").innerHTML = "Salário bruto: R$" + salario
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- Augusto Z. Vitali -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX1</title>
+</head>
+<body> 
+    <div class="form">
+        <input type ="text" id="nome" placeholder="Nome"> <br>
+        <input type="text" id="fone" placeholder="Fone"><br>
+        <input type="submit" id="acesso" name="acesso" button onclick="return receber()"> 
+        <input type="reset" id="reset" name="reset">
+    </div>
+
+        <script>
+        function receber(){
+            let nome = document.getElementById("nome").value
+            let fone = document.getElementById("fone").value
+            console.log(nome + " " + fone)
+        };
+    </script>
+</body>
+</html>
