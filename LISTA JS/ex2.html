@@ -6,13 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX2</title>
-</head>
-<body>
-    <div class="form">
-        <input type ="number" id="tempCelsius" placeholder="Celsius"> <br>
-        <input type="submit" id="acesso" name="acesso" button onclick="return transformar()"> 
-        <p id="fahrenheit"></p>
-    </div>
     <script>
         function transformar(){
             let celsius = document.getElementById("tempCelsius")
@@ -20,5 +13,12 @@
             document.getElementById("fahrenheit").innerHTML = "Temperatura em Fahrenheit: " + fahrenheit
         };
     </script>
+</head>
+<body>
+    <div class="form">
+        <input type ="number" id="tempCelsius" placeholder="Celsius"> <br>
+        <input type="submit" id="acesso" name="acesso" button onclick="return transformar()"> 
+        <p id="fahrenheit"></p>
+    </div>
 </body>
 </html>

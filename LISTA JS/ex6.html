@@ -6,14 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX6</title>
-</head>
-<body>
-    <div id="form">
-        <input type ="number" id="base" placeholder="base"> <br>
-        <input type ="number" id="altura" placeholder="altura"> <br>
-        <input type="submit" id="acesso" name="acesso" button onclick="return calcArea()"> 
-        <p id="msg"></p>
-    </div>
     <script>
         function calcArea(){
             let base = parseFloat(document.getElementById("base").value)
@@ -22,5 +14,13 @@
             document.getElementById("msg").innerHTML = "Área do triângulo será de: " + area
         };
     </script>
+</head>
+<body>
+    <div id="form">
+        <input type ="number" id="base" placeholder="base"> <br>
+        <input type ="number" id="altura" placeholder="altura"> <br>
+        <input type="submit" id="acesso" name="acesso" button onclick="return calcArea()"> 
+        <p id="msg"></p>
+    </div>
 </body>
 </html>

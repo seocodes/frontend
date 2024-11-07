@@ -6,15 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX4</title>
-</head>
-<body>
-    <div id="form">
-        <input type ="text" id="nome" placeholder="nome"> <br>
-        <input type ="text" id="produto" placeholder="produto"> <br>
-        <input type ="number" id="quantidade" placeholder="quantidade"> <br>
-        <input type ="number" id="preco" placeholder="preco"> <br>
-        <input type="submit" id="acesso" name="acesso" button onclick="return resultado()"> 
-    </div>
     <script>
         function resultado(){
             let nome = document.getElementById("nome").value
@@ -24,5 +15,14 @@
             alert(nome + ", o preço total será de:  " + resultado)
         };
     </script>
+</head>
+<body>
+    <div id="form">
+        <input type ="text" id="nome" placeholder="nome"> <br>
+        <input type ="text" id="produto" placeholder="produto"> <br>
+        <input type ="number" id="quantidade" placeholder="quantidade"> <br>
+        <input type ="number" id="preco" placeholder="preco"> <br>
+        <input type="submit" id="acesso" name="acesso" button onclick="return resultado()"> 
+    </div>
 </body>
 </html>

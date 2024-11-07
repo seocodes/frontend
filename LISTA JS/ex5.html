@@ -6,6 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX5</title>
+    <script>
+        function aumento(){
+            let nome = document.getElementById("nome").value
+            let salario = parseFloat(document.getElementById("salario").value)
+            let aumento = salario + (salario*0.05)
+            document.getElementById("msg").innerHTML = "Salário será de: " + aumento
+        };
+    </script>
 </head>
 <body>
     <div id="form">
@@ -15,13 +23,5 @@
         <input type="submit" id="acesso" name="acesso" button onclick="return aumento()"> 
         <p id="msg"></p>
     </div>
-    <script>
-        function aumento(){
-            let nome = document.getElementById("nome").value
-            let salario = parseFloat(document.getElementById("salario").value)
-            let aumento = salario + (salario*0.05)
-            document.getElementById("msg").innerHTML = "Salário será de: " + aumento
-        };
-    </script>
 </body>
 </html>

@@ -6,14 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX3</title>
-</head>
-<body>
-    <div id="form">
-        <input type ="number" id="nota1" placeholder="nota1"> <br>
-        <input type ="number" id="nota2" placeholder="nota2"> <br>
-        <input type ="number" id="nota3" placeholder="nota3"> <br>
-        <input type="submit" id="acesso" name="acesso" button onclick="return media()"> 
-    </div>
     <script>
         function media(){
             let n1 = parseFloat(document.getElementById("nota1").value)
@@ -23,5 +15,13 @@
             alert("A média é: " + media)
         };
     </script>
+</head>
+<body>
+    <div id="form">
+        <input type ="number" id="nota1" placeholder="nota1"> <br>
+        <input type ="number" id="nota2" placeholder="nota2"> <br>
+        <input type ="number" id="nota3" placeholder="nota3"> <br>
+        <input type="submit" id="acesso" name="acesso" button onclick="return media()"> 
+    </div>
 </body>
 </html>

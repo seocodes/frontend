@@ -6,6 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX1</title>
+    <script>
+        function receber(){
+            let nome = document.getElementById("nome").value
+            let fone = document.getElementById("fone").value
+            console.log(nome + " " + fone)
+        };
+    </script>
 </head>
 <body> 
     <div class="form">
@@ -14,13 +21,5 @@
         <input type="submit" id="acesso" name="acesso" button onclick="return receber()"> 
         <input type="reset" id="reset" name="reset">
     </div>
-
-        <script>
-        function receber(){
-            let nome = document.getElementById("nome").value
-            let fone = document.getElementById("fone").value
-            console.log(nome + " " + fone)
-        };
-    </script>
 </body>
 </html>

@@ -6,17 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EX10</title>
-</head>
-<body>
-    <div id="form">
-        <input type ="number" id="num1" placeholder="Número 1"> <br>
-        <input type ="number" id="num2" placeholder="Número 2"> <br>
-        <input type="submit" id="soma" value="Soma" button onclick="return soma()">
-        <input type="submit" id="subtracao" value="Subtração" button onclick="return subt()"> 
-        <input type="submit" id="multiplicacao" value="Multiplicação" button onclick="return mult()">
-        <input type="submit" id="divisao" value="Divisão" button onclick="return divisao()">
-        <p id="msg"></p>
-    </div>
     <script>
         function soma(){
             let n1 = parseFloat(document.getElementById("num2").value)
@@ -47,5 +36,16 @@
             }
         };
     </script>
+</head>
+<body>
+    <div id="form">
+        <input type ="number" id="num1" placeholder="Número 1"> <br>
+        <input type ="number" id="num2" placeholder="Número 2"> <br>
+        <input type="submit" id="soma" value="Soma" button onclick="return soma()">
+        <input type="submit" id="subtracao" value="Subtração" button onclick="return subt()"> 
+        <input type="submit" id="multiplicacao" value="Multiplicação" button onclick="return mult()">
+        <input type="submit" id="divisao" value="Divisão" button onclick="return divisao()">
+        <p id="msg"></p>
+    </div>
 </body>
 </html>
