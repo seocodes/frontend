@@ -12,7 +12,13 @@
             let n2 = parseFloat(document.getElementById("nota2").value)
             let n3 = parseFloat(document.getElementById("nota3").value)
             let media = (n1+n2+n3)/3
-            alert("A média é: " + media)
+            if (isNaN(n1) || isNaN(n2) || isNaN(n3)) {
+                alert("Não há notas o suficiente.")
+                
+            }
+            else{
+                alert("A média é: " + media)
+            }
         };
     </script>
 </head>

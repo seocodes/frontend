@@ -11,7 +11,13 @@
             let nome = document.getElementById("nome").value
             let salario = parseFloat(document.getElementById("salario").value)
             let aumento = salario + (salario*0.05)
-            document.getElementById("msg").innerHTML = "Salário será de: " + aumento
+            if (isNaN(salario)){
+                document.getElementById("msg").innerHTML = "Não tem salário pra aumentar..."
+            }
+            else{
+                document.getElementById("msg").innerHTML = "Salário será de: " + aumento
+            }
+            
         };
     </script>
 </head>
