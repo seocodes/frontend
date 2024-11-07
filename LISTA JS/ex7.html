@@ -11,7 +11,9 @@
             let peso = parseFloat(document.getElementById("peso").value)
             let altura = parseFloat(document.getElementById("altura").value)
             let massa = peso/(altura*altura)
-            document.getElementById("msg").innerHTML = "Sua massa é de: " + massa
+            if (peso != null  && altura != null){
+                document.getElementById("msg").innerHTML = "Seu IMC é de: " + massa
+            }
         };
     </script>
 </head>
