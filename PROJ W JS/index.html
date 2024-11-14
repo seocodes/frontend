@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="media/image-removebg-preview.png" type="image/x-icon">
     <title>LOUDcademy</title>
 </head>
-<body>
+<body onload="regular()">
     <nav>
         <div class="logo">
             <img src="media/image-removebg-preview.png" alt="loud" id="logo">
@@ -16,8 +16,18 @@
             <a href='form.html'<button id='redirectForm'<strong>QUERO ME MATRICULAR</strong></button></a>
     </nav>
     <div class="slider-container">
-        
+        <div class="slides">
+            <img id="imgId" src="media/coringa-gym.jpg" alt="Slider Image" class="slide">
+            
+        </div>
     </div>
-    
+    <div class="slider-controls">
+        <button onclick="menos()"><strong><</strong></button>
+        <button onclick="mais()"><strong>></strong></button>
+    </div>
+
+    <form name="form" id="form">
+        <input type="text" name="texto" value="0" readonly>
+    </form>
 </body>
 </html>
