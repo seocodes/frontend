@@ -65,14 +65,6 @@ nav{
     display: block;
 }
 
-.slide {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0; 
-    object-fit: cover; 
-    transition: transform 0.5s ease;
-}
-
 .slider-controls {
     display: flex;
     text-align: center;
@@ -94,9 +86,12 @@ nav{
     color: rgb(0, 199, 0);
     background-color: rgb(0, 0, 0);
     font-size: 35px;
-    transition: opacity 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .slider-controls button:hover {
-    opacity: 0.7;
+    transform: scale(1.2);
+    background-color: rgb(0, 199, 0);
+    color: rgb(0, 0, 0);
 }
+
