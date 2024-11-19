@@ -4,31 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
     <link rel="shortcut icon" href="media/image-removebg-preview.png" type="image/x-icon">
     <title>LOUDcademy</title>
 </head>
-<body onload="regular()">
+<body>
     <nav>
         <div class="logo">
             <img src="media/image-removebg-preview.png" alt="loud" id="logo">
         </div>
-            <a href='form.html'<button id='redirectForm'<strong>QUERO ME MATRICULAR</strong></button></a>
+        <a href='form.html'><button id='redirectForm'><strong>QUERO ME MATRICULAR</strong></button></a>
     </nav>
-
-
     <div class="slider-container">
         <div class="slides">
-            <img id="imgId" src="media/coringa-gym.jpg" alt="Slider Image">
+            <div class="slide"><img src="media/coringa-gym.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="media/maumau.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="media/mansao-do-coringa-25-1300x752.webp" alt="Slide 3"></div>
         </div>
-    </div>
-    <div class="slider-controls">
-        <button onclick="menos()"><strong><</strong></button>
-        <button onclick="mais()"><strong>></strong></button>
-    </div>
 
-    <form name="form" id="form">
-        <input type="text" name="texto" value="0" readonly>
-    </form>
+    <div class="dot-container"></div>
+    <script src="main.js"></script>
 </body>
 </html>

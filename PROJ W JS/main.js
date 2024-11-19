@@ -1,38 +1,50 @@
-var array1 = ["media/coringa-gym.jpg", "media/maumau.jpg", "media/mansao-do-coringa-25-1300x752.webp"];
-
-function updateSlider() {
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    slides.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
-}
-
-function comeco() {
-    document.getElementById('imgId').src = array1[0];
-    document.form.texto.value = "0"; 
-}
-
-function mais() {
-    var currentIndex = parseInt(document.form.texto.value); 
-    currentIndex = (currentIndex + 1) % array1.length; 
-    document.form.texto.value = currentIndex; 
-    document.getElementById('imgId').src = array1[currentIndex]; 
-}
+const slides = document.querySelector('.slides');
+        const slideElements = document.querySelectorAll('.slide');
+        const dotContainer = document.querySelector('.dot-container');
+        let currentIndex = 0;
+        let slideInterval;
 
 
-function menos() {
-    var currentIndex = parseInt(document.form.texto.value); 
-    currentIndex = (currentIndex - 1 + array1.length) % array1.length; 
-    document.form.texto.value = currentIndex; 
-    document.getElementById('imgId').src = array1[currentIndex]; 
-}
+        slideElements.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(index));
+            dotContainer.appendChild(dot);
+        });
 
-function regular() {
-    sliderInterval = setInterval(function() {
-        var currentIndex = parseInt(document.form.texto.value);
-        currentIndex = (currentIndex + 1) % array1.length; 
-        document.form.texto.value = currentIndex;
-        document.getElementById('imgId').src = array1[currentIndex];
-    }, 5000); 
+        const dots = document.querySelectorAll('.dot');
 
-}
+        function updateSlider() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            
 
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentIndex = (currentIndex + direction + slideElements.length) % slideElements.length;
+            updateSlider();
+            resetInterval();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateSlider();
+            resetInterval();
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            startAutoSlide();
+        }
+
+        function startAutoSlide() {
+            slideInterval = setInterval(() => {
+                changeSlide(1);
+            }, 3000);
+        }
+
+        startAutoSlide();

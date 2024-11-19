@@ -3,12 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <script src="main.js"></script>
     <link rel="shortcut icon" href="media/image-removebg-preview.png" type="image/x-icon">
     <title>Formulário LOUDcademy</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 id="title"> CADASTRO</h1>
+        <form id="main-form" name="main-form" method="POST" onsubmit="return validateForm()">
+            Nome: <input type="text" id="nome" name="nome"> <br>
+            Endereço: <input type="text" id="endereco" name="endereco"> <br>
+            Bairro: <input type="text" id="bairro" name="bairro"><br>
+            Cidade: <input type="text" id="cidade" name="cidade"><br>
+            CEP: <input type="text" id="cep" name="cep" onkeypress="mask(this, '#####-###')" maxlength="9"><br>
+            
+            Estado: 
+            <select id="estado" name="estado">
+                <option value="sao-paulo">São Paulo</option>
+                <option value="rio-de-janeiro">Rio de Janeiro</option>
+                <option value="minas-gerais">Minas Gerais</option>
+                <option value="parana">Paraná</option>
+                <option value="santa-catarina">Santa Catarina</option>
+            </select><br>
+
+            País: 
+            <select id="pais" name="pais">
+                <option value="brasil">Brasil</option>
+                <option value="argentina">Argentina</option>
+                <option value="portugal">Portugal</option>
+                <option value="espanha">Espanha</option>
+                <option value="franca">França</option>
+            </select><br>
+
+            Telefone Residencial: <input type="text" id="telefone_residencial" name="telefone_residencial" 
+            onkeypress="mask(this, '## # #####-####')" maxlength="15"><br>
+
+
+            Telefone Celular: <input type="text" id="telefone_celular" name="telefone_celular" 
+            onkeypress="mask(this, '## # #####-####')" maxlength="15"><br>
+
+            Email: <input type="email" id="email" name="email"><br>
+            Data de Nascimento: <input type="date" id="data_nascimento" name="data_nascimento"><br>
+            
+            CPF: <input type="text" id="cpf" name="cpf" onkeypress="mask(this, '###.###.###-##')" maxlength="14"><br>
+            RG: <input type="text" id="rg" name="rg" onkeypress="mask(this, '###.###.###')" maxlength="11"><br>
+
+            Sexo: 
+            <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+            <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+            <label><input type="radio" name="sexo" value="outro"> Outro</label><br>
+
+            Estado Civil:
+            <label><input type="radio" name="estado_civil" value="solteiro"> Solteiro(a)</label>
+            <label><input type="radio" name="estado_civil" value="casado"> Casado(a)</label>
+            <label><input type="radio" name="estado_civil" value="divorciado"> Divorciado(a)</label>
+            <label><input type="radio" name="estado_civil" value="viuvo"> Viúvo(a)</label><br>
+
+
+            Modalidade:
+            <label><input type="checkbox" name="modalidade" value="musculacao"> Musculação</label>
+            <label><input type="checkbox" name="modalidade" value="danca"> Dança</label>
+            <label><input type="checkbox" name="modalidade" value="yoga"> Yoga</label>
+            <label><input type="checkbox" name="modalidade" value="pilates"> Pilates</label>
+            <label><input type="checkbox" name="modalidade" value="natacao"> Natação</label><br>
+
+            Dias da Semana: <br>
+            <label><input type="checkbox" name="dias_semana" value="segunda"> Segunda-feira</label>
+            <label><input type="checkbox" name="dias_semana" value="terca"> Terça-feira</label>
+            <label><input type="checkbox" name="dias_semana" value="quarta"> Quarta-feira</label>
+            <label><input type="checkbox" name="dias_semana" value="quinta"> Quinta-feira</label>
+            <label><input type="checkbox" name="dias_semana" value="sexta"> Sexta-feira</label>
+            <label><input type="checkbox" name="dias_semana" value="sabado"> Sábado</label>
+            <label><input type="checkbox" name="dias_semana" value="domingo"> Domingo</label><br>
+
+            Período: 
+            <label><input type="radio" name="periodo" value="matutino"> Matutino</label>
+            <label><input type="radio" name="periodo" value="vespertino"> Vespertino</label>
+            <label><input type="radio" name="periodo" value="noturno"> Noturno</label><br>
+            <div id="submit-reset">                
+                <input type="submit" id="acesso" name="acesso" value="Cadastrar">
+                <input type="reset" id="reset" name="reset" value="Limpar" onclick="return resetQuestion()">
+            </div>
+        </form>
+    </div>
 </body>
 </html>

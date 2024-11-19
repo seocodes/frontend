@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    outline: 2px solid black;
+    text-shadow: 
+    -0.6px -0.6px 0 black,
+     0.6px -0.6px 0 black,
+    -0.6px  0.6px 0 black,
+     0.6px  0.6px 0 black; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./media/loud-champions-2023-valorant.jpg);
+}
+
+.container{
+    border-radius: 8px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: 800px;
+    height: 840px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+input, select{
+    margin-bottom: 20px;
+    border-width: thin;
+    border-radius: 5px;
+}
+
+
+#nome{
+    margin-top: 20px;
+}
+
+#submit-reset{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+#acesso, #reset{
+    border: none;
+    color: white;
+    background-color: rgba(0, 80, 31, 0.445);
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 2px;
+    padding: 6px 10px 6px 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#acesso:hover , #reset:hover{
+    transform: scale(1.1);
+}
+
+#title{
+    font-size: 30px;
+    text-shadow: 0 0 3px black;
+    font-weight: lighter;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 70%; 
+    box-sizing: border-box;
+}
