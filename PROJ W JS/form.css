@@ -60,7 +60,7 @@ input, select{
 #acesso, #reset{
     border: none;
     color: white;
-    background-color: rgba(0, 80, 31, 0.445);
+    background-color: rgb(0, 80, 31);
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     font-size: 20px;
